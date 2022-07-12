@@ -1,7 +1,86 @@
-body {
-    font-family: Roboto;
-    color: #212121;
+/* цвет основного текста  color: #757575; 
+вторичный цвет color: #212121;
+*/
+/* белый цвет color: #FFFFFF 
+цвет акцент color: #2196F3;*/
+/* цвет фона  #E5E5E5;
+цвета фона вторичные
+для рамки фото #EEEEEE
+для фильтра, наша команда #F5F4FA
+хэдэр #ECECEC
+футер, герой #2F303A
+кнопка 1 стр #2196F3
+ */
+:root {
+    --main-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
 }
-ul {
+body {
+    background-color: #E5E5E5;
+    font-family: Roboto;
+    color: var(--main-text-color);
+    
+}
+/* хэдер */
+.header {
+    background-color: #ECECEC;
+}
+.logo {
+    color: #000000;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+.logo-web {
+    color: var(--accent-color);
+}
+.list {
     list-style: none;
 }
+.site-nav .link {
+    color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+ .contacts .item {
+    text-decoration: none;
+    color: var(--main-text-color);
+ }
+ .contacts .item:hover, 
+ .contacts .item:focus {
+    color: var(--accent-color);
+ }
+
+ /* футер */
+ .footer {
+    background-color: #2F303A;;
+ }
+ .logo-studio {
+    color: #FFFFFF;
+ }
+.addr .item {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.addr .item:hover,
+.addr .item:focus {
+color: var(--accent-color);
+}
+.addr .item-color {
+    color: #FFFFFF;
+}
+
