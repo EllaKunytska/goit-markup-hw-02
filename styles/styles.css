@@ -178,6 +178,7 @@ color: var(--accent-color);
 .filter:hover,
 .filter:focus {
     background: var(--accent-color);
+    color: var(--white-text);
 }
 .cursor {
     cursor: pointer;
